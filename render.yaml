@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: construction-backend
+    name:serverside
     env: python
     plan: starter
     rootDir: backend
