@@ -5,16 +5,7 @@ __pycache__/
 # Environments
 venv/
 .venv/
-env/
-.env
-.env.*
+
 
 # Django media/cache
 *.log
-db.sqlite3
-media/
-documents/202*
-static/
-.DS_Store
-*.swp
-*.bak
