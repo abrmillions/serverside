@@ -34,8 +34,8 @@ if DEBUG and not ALLOWED_HOSTS:
     ]
     if not CSRF_TRUSTED_ORIGINS:
         CSRF_TRUSTED_ORIGINS = [
-            "http://localhost:8000",
-            "http://127.0.0.1:8000",
+            "https://serverside-nciz.onrender.com",
+            "https://clientside-ten.vercel.app",
         ]
 
 # Safe defaults for Render if not explicitly configured
@@ -49,8 +49,8 @@ if not DEBUG:
         ]
     if not CSRF_TRUSTED_ORIGINS:
         CSRF_TRUSTED_ORIGINS = [
-            "https://backend-te21.onrender.com",
-            "https://digital-licensing.vercel.app",
+            "https://serverside-nciz.onrender.com",
+            "https://clientside-ten.vercel.app",
         ]
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -201,7 +201,7 @@ if DEBUG and not CORS_ALLOW_ALL_ORIGINS and not CORS_ALLOWED_ORIGINS:
 ADMIN_IP_WHITELIST = [ip.strip() for ip in (os.environ.get("ADMIN_IP_WHITELIST") or "").split(",") if ip.strip()]
 if not DEBUG and not CORS_ALLOW_ALL_ORIGINS and not CORS_ALLOWED_ORIGINS:
     CORS_ALLOWED_ORIGINS = [
-        "https://digital-licensing.vercel.app",
+        "https://clientside-ten.vercel.app",
     ]
 
 # QR token max age (seconds). Default 7 days; can be overridden via env var.
